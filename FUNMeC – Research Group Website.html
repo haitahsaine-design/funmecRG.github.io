@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FUNMeC – Functional Materials for Energy Conversion Group</title>
+<style>
+:root{--bg:#f7faf9;--card:#fff;--tx:#12302c;--mu:#566e6a;--ac:#0b7a75;--ac2:#e0f2f0;--bd:#d5e3e1;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1a19;--card:#152624;--tx:#e6f1ef;--mu:#9ab5b1;--ac:#4fd1c5;--ac2:#18332f;--bd:#264240;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1a19;--card:#152624;--tx:#e6f1ef;--mu:#9ab5b1;--ac:#4fd1c5;--ac2:#18332f;--bd:#264240;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--ac)}
+.w{max-width:960px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--bd);z-index:5}
+nav .w{display:flex;gap:18px;align-items:center;overflow-x:auto;padding-top:12px;padding-bottom:12px;white-space:nowrap}
+nav b{margin-right:auto;color:var(--ac)}
+nav a{text-decoration:none;color:var(--tx);font-size:15px}
+header{padding:56px 0 40px;background:linear-gradient(135deg,var(--ac2),var(--bg))}
+h1{font-size:clamp(28px,5vw,44px);line-height:1.15;margin:0 0 12px}
+header p{max-width:680px;color:var(--mu);font-size:18px;margin:0 0 20px}
+.btn{display:inline-block;background:var(--ac);color:var(--bg);padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600}
+section{padding:44px 0}
+h2{font-size:26px;margin:0 0 20px;border-left:4px solid var(--ac);padding-left:12px}
+.g{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.c{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:20px}
+.c h3{margin:0 0 6px;font-size:18px}.c p{margin:0;color:var(--mu)}
+.ic{font-size:28px}
+.pi{display:flex;gap:18px;align-items:center}
+.av{flex:none;width:72px;height:72px;border-radius:50%;background:var(--ac2);color:var(--ac);display:grid;place-items:center;font-weight:700;font-size:22px}
+.role{color:var(--ac);font-size:14px;font-weight:600}
+.ph{border-style:dashed}
+.pub{padding:14px 0;border-bottom:1px solid var(--bd)}
+.pub small{color:var(--mu)}
+.yr{display:inline-block;background:var(--ac2);color:var(--ac);border-radius:6px;padding:0 8px;font-size:13px;font-weight:700;margin-right:6px}
+.if{font-size:12px;color:var(--mu);border:1px solid var(--bd);border-radius:6px;padding:0 6px;margin-left:4px;white-space:nowrap}
+footer{border-top:1px solid var(--bd);padding:28px 0;color:var(--mu);font-size:14px}
+</style>
+</head>
+<body>
+<nav><div class="w"><b>FUNMeC</b><a href="#research">Research</a><a href="#team">Team</a><a href="#publications">Publications</a><a href="#news">News</a><a href="#contact">Contact</a></div></nav>
+
+<header><div class="w">
+<h1>Functional Materials for Energy Conversion Group</h1>
+<p>FUNMeC designs and studies advanced functional materials for clean energy conversion, from hydrogen production to CO₂ reduction. Our work links synthesis, characterization and device-level performance of electro- and photocatalysts.</p>
+<a class="btn" href="#publications">Latest publications</a>
+</div></header>
+
+<section id="research"><div class="w">
+<h2>Research topics</h2>
+<div class="g">
+<div class="c"><div class="ic">💧</div><h3>Water splitting</h3><p>Photoelectrochemical and electrochemical routes to green hydrogen, including oxide photoelectrodes and sacrificial-agent effects.</p></div>
+<div class="c"><div class="ic">⚡</div><h3>Electrocatalysis</h3><p>MOF-derived, MXene and metal-oxide catalysts for hydrogen evolution, oxygen evolution and CO₂ reduction.</p></div>
+<div class="c"><div class="ic">☀️</div><h3>Photocatalysis</h3><p>Vanadate and BiVO₄-based photocatalysts for pollutant degradation under light.</p></div>
+</div></div></section>
+
+<section id="team" style="background:var(--card)"><div class="w">
+<h2>Team</h2>
+<div class="c pi" style="margin-bottom:16px"><div class="av">HA</div><div><h3 style="margin:0">Prof. Hassan Ait Ahsaine</h3><div class="role">Principal Investigator</div><p>Mohammed V University in Rabat</p></div></div>
+<div class="g">
+<div class="c ph"><div class="role">Postdoctoral researcher</div><h3>Name to add</h3><p>Research focus</p></div>
+<div class="c ph"><div class="role">PhD student</div><h3>Name to add</h3><p>Research focus</p></div>
+<div class="c ph"><div class="role">Master’s student</div><h3>Name to add</h3><p>Research focus</p></div>
+</div></div></section>
+
+<section id="publications"><div class="w">
+<h2>Selected publications</h2>
+<div id="pubs"></div>
+<p style="margin-top:24px"><a class="btn" href="https://scholar.google.fr/citations?hl=fr&user=OALzKVgAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">All publications on Google Scholar</a></p>
+</div></section>
+
+<section id="news" style="background:var(--card)"><div class="w">
+<h2>News</h2>
+<div class="c" style="margin-bottom:12px"><div class="role">2026</div><h3>New paper in Chemical Engineering Journal</h3><p>Our work on nickel MOF derivatives for the hydrogen evolution reaction has been published (vol. 527, 171757).</p></div>
+<div class="c ph"><div class="role">Date</div><h3>Add your next announcement here</h3><p>Grants, awards, conferences, open positions.</p></div>
+</div></section>
+
+<section id="contact"><div class="w">
+<h2>Contact</h2>
+<div class="c"><h3>Prof. Hassan Ait Ahsaine</h3><p>Mohammed V University in Rabat<br><a href="mailto:h.aitahsaine@um5r.ac.ma">h.aitahsaine@um5r.ac.ma</a></p></div>
+</div></section>
+
+<footer><div class="w">© 2026 FUNMeC – Functional Materials for Energy Conversion Group, Mohammed V University in Rabat</div></footer>
+
+<script>
+const P=[
+["M. El Hanafi, J. Bau, N. Khossossi, A. BaQais, H. Haspel, Z. Kónya, M. Saadi, M. Rueping, H. Ait Ahsaine","Tailoring electrocatalytic performance of nickel metal-organic framework derivatives for hydrogen evolution reaction","Chem. Eng. J. 527 (2026) 171757",2026,"12.5"],
+["M. Arab, M. Saadi, A. BaQais, H. Ait Ahsaine","Vanadate-based photocatalytic materials: a perspective on synthesis approaches and pollutants photocatalytic degradation","Nano Mater. Sci. 8 (2026) 779–800",2026,"20.5"],
+["S. Lotfi, M. El Ouardi, H. Ait Ahsaine, A. Assani","Recent progress on the synthesis, morphology and photocatalytic dye degradation of BiVO₄ photocatalysts: a review","Catal. Rev. 66 (2024) 214–258",2024,"20.21"],
+["A. El Idrissi, M. Arab, M. Zbair, H. Haspel, M. Saadi, H. Ait Ahsaine","Review of photoelectrochemical water splitting: from quantitative approaches to effect of sacrificial agents, oxygen vacancies, thermal and magnetic field on (photo)electrolysis","Int. J. Hydrogen Energy 51 (2024) 1044–1067",2024,"9.2"],
+["M. El Ouardi, V. Madigou, V. Chevallier, A. Merlen, A. BaQais, M. Saadi, H. Ait Ahsaine, M. Arab","Synthesis of ZnV₂O₆ nanosheet photocatalysts for efficient photodegradation of Rhodamine B: experimental and RSM modeling","J. Environ. Chem. Eng. 12 (2024) 113505",2024,"7.5"],
+["M. El Ouardi, O. Ait Layachi, B.-E. Channab, A. El Idrissi, A. BaQais, M. Arab, M. Zbair, M. Saadi, H. Ait Ahsaine","MXenes as electrocatalysts for energy conversion applications: advances and prospects","Adv. Energy Sustain. Res. 5 (2024) 2400033",2024,"6.4"],
+["M. El Ouardi, A. El Idrissi, H. Ait Ahsaine, A. BaQais, M. Saadi, M. Arab","Current advances on nanostructured oxide photoelectrocatalysts for water splitting: a comprehensive review","Surf. Interfaces 45 (2024) 103850",2024,"6.0"],
+["H. Ait Ahsaine, A. BaQais","Iron porphyrin for selective electrochemical reduction of CO₂: synthesis, characterization and effect of electrolyte","Inorg. Chem. Commun. 157 (2023) 111360",2023,"7.13"],
+["H. Ait Ahsaine, A. BaQais","Metal and metal oxide electrocatalysts for the electrochemical reduction of CO₂-to-C1 chemicals: are we there yet?","Green Chem. Lett. Rev. 16 (2023) 2160215",2023,"6.01"],
+["A. El Jaouhari, A. Slassi, X. Zhang, A. Pershin, H. Ait Ahsaine, C. Li, Y. Lin","High electrochemical stability and low-agglomeration of defective Co₃O₄ nanoparticles supported on N-doped graphitic carbon nano-spheres for oxygen evolution reaction","Int. J. Hydrogen Energy 48 (2023) 21723–21734",2023,"7.13"],
+["B.-E. Channab, M. El Ouardi, …, H. Ait Ahsaine","Recent trends on MIL-Fe metal–organic frameworks: synthesis approaches, structural insights, and applications in organic pollutant adsorption and photocatalytic degradation","Environ. Sci.: Nano 10 (2023) 2957–2988",2023,"5.6"],
+["M. El Hanafi, A. BaQais, M. Saadi, H. Ait Ahsaine","Advances and outlook of metal–organic frameworks as high-performance electrocatalysts for hydrogen evolution reaction: a minireview","Energy & Fuels 37 (2023) 10869–10885",2023,"5.30"]
+];
+document.getElementById("pubs").innerHTML=P.map(p=>`<div class="pub"><span class="yr">${p[3]}</span><strong>${p[1]}</strong><br><small>${p[0]}. <em>${p[2]}</em></small><span class="if">IF ${p[4]}</span></div>`).join("");
+</script>
+</body>
+</html>
